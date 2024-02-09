@@ -11,6 +11,7 @@ const HomeCompnent = ({ cityWeather }) => {
   useEffect(() => {
     if (cityWeather) {
       setWeatherData(cityWeather)
+      console.log(weatherData.coord.lat)
     } else {
       async function fetchWeather(latitude, longitude) {
         const API_URL = 'https://api.openweathermap.org/data/2.5/weather'

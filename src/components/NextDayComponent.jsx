@@ -29,7 +29,7 @@ const NextDayComponent = ({ latitude, longitude }) => {
     }
 
     fetchForecast(latitude, longitude)
-  }, [])
+  }, [latitude, longitude])
 
   return (
     <Row className="mb-4 justify-content-center">
